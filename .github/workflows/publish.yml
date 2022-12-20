@@ -36,5 +36,5 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           tags: |
-            ${{ env.DOCKER_IMAGE }}:${{ steps.tag.outputs.tag }}
+            ${{ env.DOCKER_IMAGE }}:${{ steps.tag.outputs.version }}
             ${{ env.DOCKER_IMAGE }}:latest
