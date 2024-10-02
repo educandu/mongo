@@ -1,4 +1,4 @@
-FROM mongo:7.0.3
+FROM mongo:8.0.0
 
 RUN echo "rs.initiate({'_id':'educandurs', members: [{'_id':1, 'host':'localhost:27017'}]});" > "/docker-entrypoint-initdb.d/00_init_replicaset.js"
 
